@@ -1,11 +1,11 @@
 package com.hexagonal.application;
 
+import com.hexagonal.domain.ProductServiceUserCase;
 import jakarta.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
-public class ProductService {
+public class ProductService implements ProductServiceUserCase {
     public String getProducts() {
-        // Implementación de obtención de productos
         return "Listado de productos";
     }
 }
